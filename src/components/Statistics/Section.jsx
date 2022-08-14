@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
+import { Container } from '../Statistics/Statistics.styled';
 
 export const Section = ({ title, children }) => {
   return (
-    <section>
+    <Container>
       {title ?? <h2>{title}</h2>}
       {children}
-    </section>
+    </Container>
   );
 };
 

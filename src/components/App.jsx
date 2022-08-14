@@ -19,9 +19,9 @@ export const App = () => {
         stats={user.stats}
       />
 
-      <Section title="Upload stats" />
-      <StatisticsList items={data} />
-      <Section />
+      <Section title="Upload stats">
+        <StatisticsList items={data} />
+      </Section>
 
       <FriendsList items={friends} />
 
