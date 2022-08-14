@@ -6,7 +6,7 @@ export const FriendsList = ({ items }) => {
     <ul>
       {items.map(item => (
         <li key={item.id}>
-          <Friends friends={items} />
+          <Friends friends={item} />
         </li>
       ))}
     </ul>
@@ -16,7 +16,7 @@ export const FriendsList = ({ items }) => {
 FriendsList.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string.isRequired,
+      id: PropTypes.number.isRequired,
     })
   ),
 };
