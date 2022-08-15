@@ -3,7 +3,7 @@ import { Container, TitleText } from './Statistics.styled';
 export const Section = ({ title, children }) => {
   return (
     <Container>
-      {title && <h2>{title}</h2>}
+      {title && <TitleText>{title}</TitleText>}
       {children}
     </Container>
   );
