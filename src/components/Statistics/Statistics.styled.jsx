@@ -15,7 +15,12 @@ export const Container = styled.section`
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: ${p => p.theme.radii.normal};
   width: 300px;
-  height: 60px;
+  height: 120px;
+`;
+
+export const TitleText = styled.h2`
+  text-transform: uppercase;
+  font-weight: ${p => p.theme.fontWeights.bold};
 `;
 
 export const StatsList = styled.ul`
@@ -23,10 +28,11 @@ export const StatsList = styled.ul`
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
-  gap: ${p => p.theme.space[3]}px;
+  gap: ${p => p.theme.space[4]}px;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  width: 100%;
 `;
 
 export const StatsElement = styled.div`
